@@ -5,9 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "set -e; for t in test/*.js; do node $t; done",
-        "ESM": "set -e; for t in test/*.js; do node $t; done",
-        "ESM2": "",
-        "CJS": "set -e; for t in test/*.js; do node $t; done"
+        "ESM": "mocha",
+        "CJS": "mocha"
     },
     "devDependencies": {
         "stream-spec": "~0.3.5",
