@@ -9,9 +9,10 @@
         "CJS": "mocha"
     },
     "devDependencies": {
+        "from": "~0.1.3",
+        "mocha": "^9.0.3",
         "stream-spec": "~0.3.5",
-        "tape": "~2.3.2",
-        "from": "~0.1.3"
+        "tape": "~2.3.2"
     },
     "keywords": [
         "stream",
