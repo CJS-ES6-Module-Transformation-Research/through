@@ -6,13 +6,26 @@
     "scripts": {
         "test": "set -e; for t in test/*.js; do node $t; done",
         "ESM": "mocha",
-        "CJS": "mocha"
+        "CJS": "mocha",
+        "rollup": "NODE_ENV=default rollup -c configs/rollup.config.js",
+        "rollup:preprocessed": "NODE_ENV=preprocessed rollup -c configs/rollup.config.js",
+        "rollup:transformed": "NODE_ENV=transformed rollup -c configs/rollup.config.js",
+        "webpack": "NODE_ENV=default webpack -c configs/webpack.config.js",
+        "webpack:preprocessed": "NODE_ENV=preprocessed webpack -c configs/webpack.config.js",
+        "webpack:transformed": "NODE_ENV=transformed webpack -c configs/webpack.config.js"
     },
     "devDependencies": {
+        "@rollup/plugin-commonjs": "^20.0.0",
+        "@rollup/plugin-node-resolve": "^13.0.4",
         "from": "~0.1.3",
         "mocha": "^9.0.3",
+        "rollup": "^2.55.1",
         "stream-spec": "~0.3.5",
-        "tape": "~2.3.2"
+        "tape": "~2.3.2",
+        "webpack": "^4.46.0",
+        "webpack-bundle-analyzer": "^4.4.2",
+        "webpack-cli": "^4.7.2",
+        "webpack-node-externals": "^3.0.0"
     },
     "keywords": [
         "stream",
