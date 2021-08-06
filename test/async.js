@@ -1,6 +1,6 @@
-var from = require('from');
-var through = require('../index.js');
-var tape = require('tape');
+import from from 'from';
+import through from '../index.js';
+import tape from 'tape';
 tape('simple async example', function (t) {
     var n = 0;
     var expected = [

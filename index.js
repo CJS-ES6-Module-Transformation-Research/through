@@ -1,5 +1,6 @@
-var Stream = require('stream');
-exports = module.exports = through;
+import Stream from 'stream';
+var defaultExport = {};
+defaultExport = through;
 through.through = through;
 function through(write, end, opts) {
     write = write || function (data) {
@@ -88,3 +89,4 @@ function through(write, end, opts) {
     };
     return stream;
 }
+export default defaultExport;

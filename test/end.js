@@ -1,5 +1,5 @@
-var test = require('tape');
-var through = require('../index.js');
+import test from 'tape';
+import through from '../index.js';
 test('end before close', function (assert) {
     var ts = through();
     var ended = false;

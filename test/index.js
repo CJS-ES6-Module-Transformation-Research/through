@@ -1,6 +1,6 @@
-var test = require('tape');
-var spec = require('stream-spec');
-var through = require('../index.js');
+import test from 'tape';
+import spec from 'stream-spec';
+import through from '../index.js';
 function write(array, stream) {
     array = array.slice();
     function next() {
